@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>King Mods Key Generator</title>
+<style>
+body {
+    background:#0b0b0b;
+    color:#00ff99;
+    font-family:Arial;
+    text-align:center;
+    padding-top:80px;
+}
+button {
+    padding:12px 25px;
+    font-size:16px;
+    background:#00ff99;
+    border:none;
+    border-radius:6px;
+}
+#key {
+    margin-top:25px;
+    font-size:22px;
+    letter-spacing:2px;
+}
+</style>
+</head>
+<body>
+
+<h1>🔑 King Mods</h1>
+<button onclick="gen()">توليد مفتاح</button>
+<div id="key"></div>
+
+<script>
+function gen(){
+  const c="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let r="";
+  for(let i=0;i<5;i++)
+    r+=c[Math.floor(Math.random()*c.length)];
+  document.getElementById("key").innerText="King_Mods_"+r;
+}
+</script>
+
+</body>
+</html>
